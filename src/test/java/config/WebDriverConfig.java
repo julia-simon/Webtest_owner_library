@@ -2,9 +2,9 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-public interface WebTestConfig extends Config {
+public interface WebDriverConfig extends Config {
     @Key("baseUrl")
-    @DefaultValue("https://a1qa.com/")
+    @DefaultValue("https://client-app.remedylogic.com/")
     String getBaseUrl();
 
     @Key("browser")
@@ -15,7 +15,7 @@ public interface WebTestConfig extends Config {
     String getBrowserVersion();
 
     @Key("remoteWebDriver")
-    @DefaultValue("false")
+    @DefaultValue("true")
     Boolean getRemoteWebDriver();
 
     @Key("remoteUrl")
